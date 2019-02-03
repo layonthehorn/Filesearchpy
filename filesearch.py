@@ -41,7 +41,7 @@ if arg1 =="all":
 	       # checks files for a match
 	       for i in files: 
 			  #uses os.path.join to build a absolute path to check for matches
-		          if(re.search('''{0}'''.format(userinput),os.path.join(direct,i))):
+		          if (re.search('''{0}'''.format(userinput),os.path.join(direct,i))):
 				     # saving any matches to a list for printing later
 			             filelist.append(os.path.join(direct,i))
 				
@@ -55,7 +55,7 @@ elif arg1 == "single":
     for direct, dirname, files in os.walk(filepath):
 
 	       for i in files:
-		          if(re.search('''{0}'''.format(userinput),i)):
+		          if (re.search('''{0}'''.format(userinput),i)):
 				     # saving any matches to a list for printing later
 			             filelist.append(os.path.join(direct,i))
 
